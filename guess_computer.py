@@ -19,7 +19,7 @@ while comp_guess != random_num:
         time.sleep(1)
         print(f"You: No,think of a number smaller than {comp_guess}")
         step_required += 1 
-        high = comp_guess
+        high = comp_guess+1
         print("Thinking.........................")
         time.sleep(2)
     elif comp_guess < random_num:
@@ -27,7 +27,7 @@ while comp_guess != random_num:
         time.sleep(1)
         print(f"You: No,think of a number bigger than {comp_guess}")
         step_required += 1
-        low = comp_guess
+        low = comp_guess+1
         print("Thinking.........................")
         time.sleep(2)
     else:
